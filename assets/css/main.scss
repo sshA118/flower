@@ -1,0 +1,337 @@
+@font-face {
+    font-family: Montserat;
+    src: url(../fonts/Montserrat-Bold.ttf);
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: Montserat;
+    src: url(../fonts/Montserrat-Regular.ttf);
+    font-weight: 400;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserat;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+.container{
+    max-width: 1165px;
+    margin: 0 auto;
+}
+
+.header{
+    width: 100%;
+    position: absolute;
+    padding-top: 40px;
+    &__wrap{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__elems{
+        display: flex;
+        align-items: center;
+    }
+    &__icons{
+        display: flex;
+        align-items: center;
+    }
+    &__btns{
+        display: flex;
+        align-items: center;
+    }
+    &__search{
+        margin-right: 40px;
+    }
+}
+
+.btn{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 800;
+    background-color: #156963;
+    padding: 8px 33px;
+    &_w{
+        color: #156963;
+        background-color: #fff;
+    }
+}
+
+.main{
+    &__wrap{
+        display: flex;
+        gap: 77px;
+        align-items: end;
+    }
+    &__texts{
+        max-width: 523px;
+    }
+    &__title{
+        color: #156963;
+        font-size: 68px;
+        font-weight: 500;
+        margin-bottom: 24px;
+    }
+    &__text{
+        color: #2C1500;
+        font-size: 18px;
+        font-weight: 400;
+        margin-bottom: 110px;
+    }
+    &__btns{
+        display: flex;
+    }
+    &__btn{
+        width: 320px;
+        padding: 40px 50px;
+        &-subtitle{
+            color: #333333;
+            font-size: 24px;
+            font-weight: 500;
+            display: flex;
+            margin-bottom: 12px;
+            &_p::before{
+                content: "";
+                display: block;
+                background: url("../img/arrow.svg");
+                width: 32px;
+                height: 32px;
+                margin-right: 9px;
+            }
+            &_n::after{
+                content: "";
+                display: block;
+                background: url("../img/arrow.svg");
+                width: 32px;
+                height: 32px;
+                margin-left: 9px;
+                transform: rotate(180deg);
+            }
+        }
+        &-text{
+            color: #fff;
+            font-size: 32px;
+            font-weight: 500;
+            &_g{
+                color: #156963;
+            }
+        }
+    }
+}
+
+.adventages{
+    padding: 142px 0;
+    &__row{
+        display: flex;
+        gap: 32px;
+    }
+    &__card{
+        padding: 16px 20px;
+        border: 1px solid #E0E0E0;
+    }
+    &__block{
+        display: flex;
+        gap: 19px;
+        margin-bottom: 16px;
+    }
+    &__title{
+        color: #156963;
+        font-size: 16px;
+        font-weight: 800;
+        max-width: 108px;
+    }
+}
+
+.fini{
+    padding: 80px;
+    &__up{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__plants{
+        color: #000000;
+            font-size: 20px;
+        font-weight: 500;
+    }
+    
+    &__vector{
+        padding: 16px;
+    }
+    &__flowers{
+        padding: 24px;
+    }
+    &__row{
+        display: flex;
+    }
+    &__card{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 217px;
+        height: 281px;
+        align-items: center;
+        margin-right: 20px;
+    }
+    &__text{
+        padding: 16px 0 0 0;
+    }
+    &__price{
+        padding: 8px;
+    }
+}
+
+.info{
+    padding: 80px;
+
+    &__title{
+        display: flex;
+        justify-content: left;
+        flex-direction: column;
+    }
+
+    &__buy{
+        color: #2C1500;
+        font-size: 40px;
+        font-weight: 700;
+        width: 522px;
+    }
+
+    &__text{
+        padding: 16px 0 0 0;
+        width: 506px;
+        color: #2C1500;
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    &__mirror{
+        padding: 74px 0 0 0;
+        width: 568px;
+        height: 250px;
+    }
+
+    &__wall{
+        display: flex;
+        justify-content: right;
+        margin-top: -495px;
+    }
+
+}
+
+.rob{
+    padding: 80px;
+
+    &__title{
+        background: url("../img/bg-get.jpg") no-repeat center center/ cover;
+        width: 1168px;
+        height: 360px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    &__title-text{
+        color: #2C1500;
+        font-size: 40px;
+        font-weight: 700;
+        width: 585px;
+        padding-left: 97px;
+        margin-bottom: 32px;
+    }
+
+    &__btn{
+        margin-left: 97px;
+    }
+
+}
+
+
+.sadim{
+    padding: 80px;
+
+    &__line{
+        width: 1165px;
+    }
+
+    &__info{
+        padding: 60px;
+        display: flex;
+    }
+
+    &__logo{
+        text-transform: uppercase;
+        color: #156963;
+        font-size: 24px;
+        font-weight: 500;
+    }
+
+    &__house{
+        padding: 24px 0 0 0;
+        color: #333333;
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    &__address{
+        padding: 10px 0 0 0;
+        font-size: 13px;
+        font-weight: 400;
+    }
+
+    &__center-left{
+        padding-left: 80px;
+        padding-right: 80px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__peru{
+        color: #000000;
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+
+    &__small-info{
+        padding: 0 0 14px 0;
+        color: #000000;
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    &__small-info2{
+        color: #000000;
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    &__center-right{
+        padding-left: 80px;
+        padding-right: 80px;
+        display: flex;
+        flex-direction: column;
+    }
+
+   
+
+    &__btn{
+        color: #fff;
+        font-size: 8px;
+        font-weight: 500;
+        background-color: #156963;
+        padding: 4px 12px;
+        border-radius: 2px;
+    }
+}
+
